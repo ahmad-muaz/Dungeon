@@ -14,13 +14,13 @@ public class Diamond : MonoBehaviour
             //add the value of the diamond to the player & collect
             Player player = other.GetComponent<Player>();
 
-            if(player != null)
+            if (player != null)
             {
                 player.AddGems(gems);
                 //player.diamonds += gems;
                 Destroy(this.gameObject);
             }
-            
+
         }
     }
 }
