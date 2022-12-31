@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3013926345412486919}
   - component: {fileID: 3013926345412486923}
   - component: {fileID: 3013926345412486922}
+  - component: {fileID: 5959546364419287001}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -138,9 +139,22 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.007861316, y: 0.05924827}
   serializedVersion: 2
   m_Radius: 0.40959504
+--- !u!114 &5959546364419287001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3013926345412486918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054c6a4ee85460e40a555b92bc44d5b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gems: 1

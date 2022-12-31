@@ -39,6 +39,7 @@ public class Skeleton : Enemy, IDamageable
 
     public void Damage()
     {
+        Debug.Log("Ini Is DEADDD" + isDead);
         if (isDead == true)
             return;
 
@@ -57,6 +58,7 @@ public class Skeleton : Enemy, IDamageable
             isDead = true;
             //Destroy(this.gameObject);
             anim.SetTrigger("Death");
+            Debug.Log("Mati Ges");
             //spawn a diamond
             GameObject diamond = Instantiate(diamondPrefab, transform.position, Quaternion.identity) as GameObject;
             //change value of diamond to whatever my gem count is.
